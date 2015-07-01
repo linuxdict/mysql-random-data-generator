@@ -13,6 +13,7 @@ This is the easiest MySQL Random Data Generator tool. Load the procedure and exe
 3) Load it to mysql
 
 mysql -uUSER -p < sakila-schema.sql
+
 mysql -uUSER -p sakila < populate.sql
 
 4) Use:
