@@ -7,13 +7,17 @@ This is the easiest MySQL Random Data Generator tool. Load the procedure and exe
 1) Download random data generater (populate.sql) from website or git.
 - http://kedar.nitty-witty.com/blog/generate-random-test-data-for-mysql-using-routines
 
-2) Load it to mysql
+2) Download Sample Database from Mysql or Use sakila-schema.sql from here.
+- http://downloads.mysql.com/docs/sakila-db.tar.gz
 
-mysql -uUSER -p DBNAME < populate.sql
+3) Load it to mysql
 
-3) Use:
+mysql -uUSER -p < sakila-schema.sql
+mysql -uUSER -p sakila < populate.sql
 
-mysql>use DBNAME
+4) Use:
+
+mysql>use sakila
 
 mysql>call populate('sakila','film',100,'N');
 
