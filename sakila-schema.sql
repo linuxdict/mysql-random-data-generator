@@ -132,8 +132,6 @@ CREATE TABLE film (
   KEY idx_title (title),
   KEY idx_fk_language_id (language_id),
   KEY idx_fk_original_language_id (original_language_id),
-  CONSTRAINT fk_film_language FOREIGN KEY (language_id) REFERENCES language (language_id) ON DELETE RESTRICT ON UPDATE CASCADE,
-  CONSTRAINT fk_film_language_original FOREIGN KEY (original_language_id) REFERENCES language (language_id) ON DELETE RESTRICT ON UPDATE CASCADE
 )ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
